@@ -43,7 +43,7 @@ public class ProductService {
                         .id(product.getId())
                         .name(product.getName())
                         .description(product.getDescription())
-                        .price(getPrice())
+                        .price(product.getPrice())
                         .build();
     }
 }
