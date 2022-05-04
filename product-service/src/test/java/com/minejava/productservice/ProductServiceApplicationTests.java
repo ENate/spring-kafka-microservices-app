@@ -34,7 +34,8 @@ class ProductServiceApplicationTests {
 	@Autowired
 	private MockMvc mockMvc;
 	// Define static method to initialize on start up, add dynamic source
-	// define Object mapper to ocnvert object requested to POJO and vice versa 
+	// define Object mapper to ocnvert object requested to POJO and vice versa
+	@Autowired
 	private ObjectMapper objectMapper;
 	// Save prduct and check size
 	@Autowired
@@ -42,8 +43,8 @@ class ProductServiceApplicationTests {
 
 
 	@DynamicPropertySource
-	static void setProperties(DynamicPropertyRegistry dynamicPropertyRegistry){
-		dynamicPropertyRegistry.add("spring.data.mongodb.uri", mongoDBContainer::getReplicaSetUrl);
+	static void setProperties(DynamicPropertyRegistry dynPropertyRegistry){
+		dynPropertyRegistry.add("spring.data.mongodb.uri", mongoDBContainer::getReplicaSetUrl);
 	}
 
 	// Create mock servlet environment to call our controller
