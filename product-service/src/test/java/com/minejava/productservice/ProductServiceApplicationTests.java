@@ -29,7 +29,7 @@ class ProductServiceApplicationTests {
 	// Provide mongodb docker version in deprecated object definition
 	// Add container to tell db this is a db. Add static
 	@Container
-	static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo: 4.4.2");
+	static MongoDBContainer mongoDBContainer = new MongoDBContainer("mongo:4.4.2");
 	// Auto wire mock to use: auto configure mock mvc:
 	@Autowired
 	private MockMvc mockMvc;
