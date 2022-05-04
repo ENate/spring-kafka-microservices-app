@@ -52,8 +52,8 @@ class ProductServiceApplicationTests {
 		// create method to define product req obj?
 		ProductRequest productRequest = getProductRequest();
 		String productRequestString = objectMapper.writeValueAsString(productRequest);
-		mockMvc.perform(MockMvcRequestBuilders.post("/api/produc")
-		       .contentType(MediaType.APPLICATION_JSON)
+		mockMvc.perform(MockMvcRequestBuilders.post("/api/product")
+			   .contentType(MediaType.APPLICATION_JSON)
 			   .content(productRequestString))
 			   .andExpect(status().isCreated());
 		Assertions.assertEquals(1, productRepository.findAll().size());
