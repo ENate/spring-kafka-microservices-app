@@ -41,11 +41,18 @@ class ProductServiceApplicationTests {
 	@Autowired
 	private ProductRepository productRepository;
 
-
+	/** 
 	@DynamicPropertySource
 	static void setProperties(DynamicPropertyRegistry dynPropertyRegistry){
 		dynPropertyRegistry.add("spring.data.mongodb.uri", mongoDBContainer::getReplicaSetUrl);
 	}
+
+	*/
+	
+	@DynamicPropertySource
+  static void setProperties(DynamicPropertyRegistry registry) {
+    registry.add("spring.data.mongodb.uri", mongoDBContainer::getReplicaSetUrl);
+  }
 
 	// Create mock servlet environment to call our controller
 	@Test
