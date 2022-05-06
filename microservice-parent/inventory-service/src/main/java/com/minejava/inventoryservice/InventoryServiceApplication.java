@@ -26,7 +26,7 @@ public class InventoryServiceApplication {
 			// Another object
 			Inventory inventory2 = new Inventory();
 			inventory2.setSkuCode("skuCode_XXX");
-			inventory2.setQuantity(10);
+			inventory2.setQuantity(0);
 
 
 			// Save them in a db!

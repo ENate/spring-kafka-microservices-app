@@ -5,7 +5,7 @@ server:
 spring:
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/order_service
+        url: jdbc:mysql://localhost:3306/inventory_service
         username: root
         password: root_password
     jpa:
