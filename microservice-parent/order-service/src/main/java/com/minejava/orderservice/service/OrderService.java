@@ -10,11 +10,13 @@ import com.minejava.orderservice.model.OrderLineItems;
 import com.minejava.orderservice.repository.OrderRepository;
 
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import lombok.RequiredArgsConstructor;
 
 @Service
 @RequiredArgsConstructor // auto create constructor for repo object
+@Transactional // spring framework creates transaction auto
 public class OrderService {
 
     private final OrderRepository orderRepository;
