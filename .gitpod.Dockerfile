@@ -5,3 +5,4 @@ FROM gitpod/workspace-mongodb
 
 FROM gitpod/workspace-mysql
 
+RUN mysql -e "CREATE DATABASE order_service;" && mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'root_password';"

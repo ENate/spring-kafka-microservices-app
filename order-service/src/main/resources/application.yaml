@@ -4,7 +4,9 @@ server:
 spring:
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://localhost:3306/order-service
+        url: jdbc:mysql://localhost:3306/order_service
+        username: root
+        password: root_password
     jpa:
         hibernate.ddl-auto: update
         generate-ddl: true
