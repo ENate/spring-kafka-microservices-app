@@ -22,16 +22,16 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/inventory-service/src/main/java/com/minejava/inventoryservice/InventoryServiceApplication.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
+          <option name="caretOffset" value="1318" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/pom.xml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
           <option name="caretOffset" value="336" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/ProductServiceApplication.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="655" />
+          <option name="caretOffset" value="489" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/pom.xml" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="491" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/pom.xml" />
         </OpenedFileInfo>
       </list>
     </option>
