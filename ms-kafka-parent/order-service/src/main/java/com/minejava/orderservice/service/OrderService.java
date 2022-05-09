@@ -33,6 +33,8 @@ public class OrderService {
                     // constructed an object of type order: save order to data base
                     // create repo
         order.setOrderLineItemsList(orderLineItems);
+        // Call inventory service and place order if product is in stock
+        
         orderRepository.save(order);
     }
     private OrderLineItems mapToDto(OrderLineItemsDto orderLineItemsDto){
