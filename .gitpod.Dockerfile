@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full
 
-FROM gitpod/workspace-mongodb
+# FROM gitpod/workspace-mongodb
 
 FROM gitpod/workspace-mysql
 
