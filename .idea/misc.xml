@@ -18,10 +18,6 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="463" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/inventory-service/src/main/java/com/minejava/inventoryservice/InventoryServiceApplication.java" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
           <option name="caretOffset" value="423" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/ProductServiceApplication.java" />
         </OpenedFileInfo>
@@ -42,8 +38,12 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/config/WebClientConfig.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
+          <option name="caretOffset" value="1978" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/service/OrderService.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="702" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/inventory-service/src/main/java/com/minejava/inventoryservice/InventoryServiceApplication.java" />
         </OpenedFileInfo>
       </list>
     </option>

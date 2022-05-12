@@ -29,7 +29,7 @@ public class OrderService {
         // Create order object
         Order order = new Order();
         order.setOrderNumber(UUID.randomUUID().toString());
-        // Map order line items to orderlime items via request
+        // Map order line items to order-line items via request
         List<OrderLineItems> orderLineItems = orderRequest.getOrderLineItemsDtoList()
                     .stream()
                     .map(this::mapToDto)
