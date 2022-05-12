@@ -34,8 +34,16 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/ProductServiceApplication.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
+          <option name="caretOffset" value="195" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/resources/application.yaml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="396" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/order-service/src/main/resources/application.yaml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/inventory-service/src/main/resources/application.yaml" />
         </OpenedFileInfo>
       </list>
     </option>
