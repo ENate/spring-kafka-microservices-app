@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full
 
 FROM gitpod/workspace-mongodb
-sudo mkdir -p /workspace/data && mongod --dbpath /workspace/data
+RUN sudo mkdir -p /workspace/data && mongod --dbpath /workspace/data
 
 
 FROM gitpod/workspace-mysql
