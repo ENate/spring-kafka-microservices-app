@@ -8,7 +8,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="17" project-jdk-type="JavaSDK" />
   <component name="SwUserDefinedSpecifications">
     <option name="specTypeByUrl">
       <map />
@@ -22,7 +22,7 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/inventory-service/src/main/java/com/minejava/inventoryservice/InventoryServiceApplication.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1318" />
+          <option name="caretOffset" value="1360" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/pom.xml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
@@ -30,8 +30,12 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/ProductServiceApplication.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="489" />
+          <option name="caretOffset" value="612" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/pom.xml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/pom.xml" />
         </OpenedFileInfo>
       </list>
     </option>
