@@ -18,11 +18,7 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1053" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/inventory-service/src/main/java/com/minejava/inventoryservice/InventoryServiceApplication.java" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="226" />
+          <option name="caretOffset" value="423" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/ProductServiceApplication.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
@@ -46,8 +42,20 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/OrderServiceApplication.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="264" />
+          <option name="caretOffset" value="333" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/java/com/minejava/discoveryserver/DiscoveryServerApplication.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="734" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/pom.xml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="200" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/src/main/java/com/minejava/apigateway/ApiGatewayApplication.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/src/main/resources/application.yaml" />
         </OpenedFileInfo>
       </list>
     </option>
