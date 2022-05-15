@@ -23,8 +23,6 @@ public class ProductController {
 
     private final ProductService productService;
 
-
-
     // post mapping and request body
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
