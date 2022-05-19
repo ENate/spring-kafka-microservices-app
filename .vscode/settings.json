@@ -1,4 +1,24 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
-    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -javaagent:\"/home/gitpod/.vscode-server/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\""
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx2G -Xms100m -javaagent:\"/home/gitpod/.vscode-server/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#748688",
+        "activityBar.activeBorder": "#e7b7e2",
+        "activityBar.background": "#748688",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#e7b7e2",
+        "activityBarBadge.foreground": "#15202b",
+        "sash.hoverBorder": "#748688",
+        "statusBar.background": "#5d6b6d",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#748688",
+        "statusBarItem.remoteBackground": "#5d6b6d",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#5d6b6d",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#5d6b6d99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.remoteColor": "#5d6b6d"
 }

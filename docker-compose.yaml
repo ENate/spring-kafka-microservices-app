@@ -10,3 +10,18 @@ services:
     environment:
       - MONGO_INITDB_ROOT_USERNAME=root
       - MONGO_INITDB_ROOT_PASSWORD=S3cret
+
+
+  keycloak:
+      container_name: keycloak
+      image: ${IMAGE}
+      environment:
+        DB_VENDOR: h2
+        PROXY_ADDRESS_FORWARDING: "true"
+        KEYCLOAK_USER: ${KEYCLOAK_USER}
+        KEYCLOAK_PASSWORD: ${KEYCLOAK_PASSWORD}
+        KEYCLOAK_STATISTICS: ${KEYCLOAK_STATISTICS}
+        KEYCLOAK_LOGLEVEL: ${KEYCLOAK_LOGLEVEL}
+        JAVA_OPTS_APPEND: "${JAVA_OPTS_APPEND}"
+      ports:
+        - 8080:8080
