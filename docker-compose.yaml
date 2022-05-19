@@ -24,4 +24,4 @@ services:
         KEYCLOAK_LOGLEVEL: ${KEYCLOAK_LOGLEVEL}
         JAVA_OPTS_APPEND: "${JAVA_OPTS_APPEND}"
       ports:
-        - 8080:8080
+        - 8181:8080
