@@ -13,24 +13,24 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="265" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/src/main/java/com/minejava/apigateway/ApiGatewayApplication.java" />
+          <option name="caretOffset" value="928" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/src/main/resources/application.properties" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/service/OrderService.java" />
+          <option name="caretOffset" value="1021" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/pom.xml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="125" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.yml" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="1457" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/inventory-service/pom.xml" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="1319" />
+          <option name="caretOffset" value="1201" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/pom.xml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="205" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/resources/application.yaml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1094" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/java/com/minejava/discoveryserver/config/SecurityConfig.java" />
         </OpenedFileInfo>
       </list>
     </option>
