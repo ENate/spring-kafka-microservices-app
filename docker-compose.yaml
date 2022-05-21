@@ -23,7 +23,6 @@ services:
     volumes:
       - /workspace/mongo:/data/db
 
-
   keycloak:
       container_name: keycloak
       image: ${IMAGE}
@@ -37,3 +36,6 @@ services:
         JAVA_OPTS_APPEND: "${JAVA_OPTS_APPEND}"
       ports:
         - 8181:8080
+
+volumes:
+  mongo:
