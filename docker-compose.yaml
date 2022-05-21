@@ -5,7 +5,7 @@ services:
     image: mongo:5.0
     container_name: mongodb
     ports:
-      - 8088:8088
+      - 8088 :8088
     volumes:
       - /workspace/mongo:/data/db
     environment:
@@ -37,7 +37,7 @@ services:
         KEYCLOAK_LOGLEVEL: ${KEYCLOAK_LOGLEVEL}
         JAVA_OPTS_APPEND: "${JAVA_OPTS_APPEND}"
       ports:
-        - 8181:8080
+        - 8181 :8080
 
 volumes:
   mongo:

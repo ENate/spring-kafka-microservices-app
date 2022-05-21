@@ -25,12 +25,32 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/pom.xml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="205" />
+          <option name="caretOffset" value="66" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/resources/application.yaml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
           <option name="caretOffset" value="1094" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/java/com/minejava/discoveryserver/config/SecurityConfig.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="423" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/ProductServiceApplication.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="444" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/java/com/minejava/discoveryserver/DiscoveryServerApplication.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="160" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/resources/application.yaml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="245" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/order-service/src/main/resources/application.yaml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="438" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.yml" />
         </OpenedFileInfo>
       </list>
     </option>

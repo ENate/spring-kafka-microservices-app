@@ -19,7 +19,7 @@ tasks:
       export JAVA_OPTS_APPEND="${JAVA_OPTS_APPEND:=-Dkeycloak.profile.feature.upload_script=enabled -Dkeycloak.profile.feature.scripts=enabled -Dkeycloak.profile.feature.account2=enabled -Dkeycloak.profile.feature.account_api=enabled}" &&
       docker-compose up -d &&
       docker logs -f keycloak 
-  - name: run-mongodb
+  - name: run-mongodb2
     init: docker exec -it mongodb bash
 
 
