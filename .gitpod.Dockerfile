@@ -7,7 +7,7 @@
 # && sudo rm -rf /var/lib/apt/lists/*
 # RUN sudo mkdir -p /workspace/data/db && sudo chown gitpod:gitpod -R /workspace/data/db
 
-# FROM gitpod/workspace-mongodb
+FROM gitpod/workspace-full
 
 
 FROM gitpod/workspace-mysql

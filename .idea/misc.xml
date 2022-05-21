@@ -13,10 +13,6 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="928" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/src/main/resources/application.properties" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
           <option name="caretOffset" value="1021" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/pom.xml" />
         </OpenedFileInfo>
@@ -49,7 +45,11 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/order-service/src/main/resources/application.yaml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="438" />
+          <option name="caretOffset" value="179" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/docker-compose.yaml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="194" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.yml" />
         </OpenedFileInfo>
       </list>
