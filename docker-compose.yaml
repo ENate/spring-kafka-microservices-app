@@ -1,18 +1,18 @@
-#version: '3.9'
+version: '3.9'
 
-#services:
-#  mongodb:
-#    image: mongo:5.0
-#    ports:
-#      - 27017:27017
-#    volumes:
-#      - /workspace/mongo:/data/db
-#    environment:
-#      - MONGO_INITDB_ROOT_USERNAME=root
-#      - MONGO_INITDB_ROOT_PASSWORD=S3cret
-
-version: '3.7'
 services:
+  mongodb:
+    image: mongo:5.0
+    ports:
+      - 27017:27017
+    volumes:
+      - /workspace/mongo:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=S3cret
+
+#version: '3.7'
+#services:
   #mongodb_container:
   #  image: mongo:latest
   #  environment:
