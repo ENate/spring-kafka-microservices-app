@@ -18,7 +18,9 @@ tasks:
       export KEYCLOAK_LOGLEVEL="${KEYCLOAK_LOGLEVEL:=INFO}" &&
       export JAVA_OPTS_APPEND="${JAVA_OPTS_APPEND:=-Dkeycloak.profile.feature.upload_script=enabled -Dkeycloak.profile.feature.scripts=enabled -Dkeycloak.profile.feature.account2=enabled -Dkeycloak.profile.feature.account_api=enabled}" &&
       docker-compose up -d &&
-      docker logs -f keycloak
+      docker logs -f keycloak 
+  - name: run-mongodb
+    init: docker exec -it mongodb bash
 
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
