@@ -7,8 +7,8 @@ RUN sudo apt-get update \
  && sudo apt-get install -y mongodb-org \
  && sudo apt-get clean \
  && sudo rm -rf /var/lib/apt/lists/*
-RUN sudo mkdir -p /data/db \
- && sudo chown gitpod:gitpod -R /data/db
+RUN sudo mkdir -p /workspace/data/db \
+ && sudo chown gitpod:gitpod -R /workspace/data/db
 
 
 
