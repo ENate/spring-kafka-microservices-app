@@ -2,15 +2,16 @@ version: '3.9'
 
 services:
   mongodb:
-    image: mongo:5.0
+    image: mongo:latest
     container_name: mongodb
     ports:
-      - 8088:8088
+      - 27017:27017
     volumes:
-      - /workspace/mongo:/data/db
+      - ~/apps/mongo:/data/db
     environment:
-      - MONGO_INITDB_ROOT_USERNAME=root
-      - MONGO_INITDB_ROOT_PASSWORD=S3cret
+      - MONGO_INITDB_ROOT_USERNAME:root
+      - MONGO_INITDB_ROOT_PASSWORD:S3cret
+      - MONGO_INITDB_DATABASE:testdb
       
 
 #version: '3.7'
