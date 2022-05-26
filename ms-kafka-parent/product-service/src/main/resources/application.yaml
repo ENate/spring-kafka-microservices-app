@@ -7,7 +7,7 @@ spring:
 
   data:
       mongodb:
-        host:localhost
+        host:mongodb
         port:27017
         username:root
         password:S3cret

@@ -13,7 +13,7 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="135" />
+          <option name="caretOffset" value="136" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/resources/application.yaml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
@@ -22,7 +22,23 @@
         </OpenedFileInfo>
         <OpenedFileInfo>
           <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/README.md" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="118" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/resources/application.yaml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="639" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.yml" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="424" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/ProductServiceApplication.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="1261" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/test/java/com/minejava/productservice/ProductServiceApplicationTests.java" />
         </OpenedFileInfo>
       </list>
     </option>

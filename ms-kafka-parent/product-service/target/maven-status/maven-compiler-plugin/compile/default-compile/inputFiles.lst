@@ -1,0 +1,7 @@
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/service/ProductService.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/controller/ProductController.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/model/Product.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/dto/ProductResponse.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/repository/ProductRepository.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/ProductServiceApplication.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/dto/ProductRequest.java

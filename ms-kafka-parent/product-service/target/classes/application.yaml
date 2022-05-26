@@ -7,7 +7,12 @@ spring:
 
   data:
       mongodb:
-        uri: mongodb://localhost:27017/product_service
+        host:mongodb
+        port:27017
+        username:root
+        password:S3cret
+        database:product_service
+        authentication-database:testdb
 eureka:
   client:
     serviceUrl:
