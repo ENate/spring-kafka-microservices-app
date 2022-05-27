@@ -10,6 +10,7 @@ eureka:
     fetch-registry: false
 
 
-  username: ${EUREKA_USERNAME:eureka}
+app:
+  username:${EUREKA_USERNAME:eureka}
 
-  password: ${EUREKA_PASSWOR:password}
+  password:${EUREKA_PASSWORD:password}
