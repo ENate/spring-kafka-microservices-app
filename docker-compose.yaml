@@ -12,19 +12,17 @@ services:
       - MONGO_INITDB_ROOT_USERNAME:root
       - MONGO_INITDB_ROOT_PASSWORD:S3cret
       - MONGO_INITDB_DATABASE:testdb
-      
-
-#version: '3.7'
-#services:
-  #mongodb_container:
-  #  image: mongo:latest
-  #  environment:
-  #    MONGO_INITDB_ROOT_USERNAME: root
-  #    MONGO_INITDB_ROOT_PASSWORD: rootpassword
-  #  ports:
-  #    - 27017:27017
-  #  volumes:
-  #    - /workspace/mongo:/data/db
+  mysql:
+    image: mysql:8
+    ports:
+      - 3306:3306
+    volumes:
+      - ~/apps/mysql:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=S3cret
+      - MYSQL_PASSWORD=An0thrS3crt
+      - MYSQL_USER=citizix_user
+      - MYSQL_DATABASE=citizix_db
 
   keycloak:
       container_name: keycloak
