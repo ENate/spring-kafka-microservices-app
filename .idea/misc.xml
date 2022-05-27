@@ -37,8 +37,12 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/java/com/minejava/discoveryserver/config/SecurityConfig.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
+          <option name="caretOffset" value="444" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/java/com/minejava/discoveryserver/DiscoveryServerApplication.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="0" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/docker-compose.yaml" />
         </OpenedFileInfo>
       </list>
     </option>

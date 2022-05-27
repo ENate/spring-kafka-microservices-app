@@ -13,7 +13,7 @@ services:
       - MONGO_INITDB_ROOT_PASSWORD:S3cret
       - MONGO_INITDB_DATABASE:testdb
   mysql:
-    image: mysql:8
+    image: mysql:latest
     ports:
       - 3306:3306
     volumes:
@@ -21,8 +21,8 @@ services:
     environment:
       - MYSQL_ROOT_PASSWORD=S3cret
       - MYSQL_PASSWORD=An0thrS3crt
-      - MYSQL_USER=citizix_user
-      - MYSQL_DATABASE=citizix_db
+      - MYSQL_USER=mysql_user
+      - MYSQL_DATABASE=order_db
 
   keycloak:
       container_name: keycloak
