@@ -1,0 +1,11 @@
+com/minejava/orderservice/service/OrderService.class
+com/minejava/orderservice/model/Order.class
+com/minejava/orderservice/dto/OrderLineItemsDto.class
+com/minejava/orderservice/OrderServiceApplication.class
+com/minejava/orderservice/dto/InventoryResponse.class
+com/minejava/orderservice/dto/InventoryResponse$InventoryResponseBuilder.class
+com/minejava/orderservice/repository/OrderRepository.class
+com/minejava/orderservice/config/WebClientConfig.class
+com/minejava/orderservice/model/OrderLineItems.class
+com/minejava/orderservice/dto/OrderRequest.class
+com/minejava/orderservice/controller/OrderController.class

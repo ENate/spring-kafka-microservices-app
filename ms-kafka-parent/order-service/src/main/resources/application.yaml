@@ -8,8 +8,8 @@ spring:
     datasource:
         driverClassName: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://localhost:3306/order_service
-        username: root
-        password:
+        username: mysql_user
+        password: An0thrS3crt
     jpa:
         hibernate.ddl-auto: update
         generate-ddl: true

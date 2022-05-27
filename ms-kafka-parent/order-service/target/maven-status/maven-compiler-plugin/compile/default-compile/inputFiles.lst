@@ -1,0 +1,10 @@
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/dto/InventoryResponse.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/dto/OrderLineItemsDto.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/model/OrderLineItems.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/controller/OrderController.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/model/Order.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/repository/OrderRepository.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/service/OrderService.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/OrderServiceApplication.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/config/WebClientConfig.java
+/workspace/spring-kafka-microservices-app/ms-kafka-parent/order-service/src/main/java/com/minejava/orderservice/dto/OrderRequest.java
