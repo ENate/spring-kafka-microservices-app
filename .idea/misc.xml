@@ -13,27 +13,7 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="639" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.yml" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="424" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/ProductServiceApplication.java" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="2135" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/test/java/com/minejava/productservice/ProductServiceApplicationTests.java" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="345" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/dto/ProductRequest.java" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="250" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/repository/ProductRepository.java" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="518" />
+          <option name="caretOffset" value="1180" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/product-service/src/main/java/com/minejava/productservice/service/ProductService.java" />
         </OpenedFileInfo>
         <OpenedFileInfo>
@@ -41,11 +21,15 @@
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/inventory-service/src/main/resources/application.yaml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="164" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.Dockerfile" />
+          <option name="caretOffset" value="319" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.yml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1412" />
+          <option name="caretOffset" value="658" />
+          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/src/main/java/com/minejava/apigateway/config/SecurityConfig.java" />
+        </OpenedFileInfo>
+        <OpenedFileInfo>
+          <option name="caretOffset" value="458" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/src/main/resources/application.properties" />
         </OpenedFileInfo>
       </list>
