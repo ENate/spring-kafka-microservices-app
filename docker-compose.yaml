@@ -50,6 +50,8 @@ services:
   keycloak:
     container_name: keycloak
     image: quay.io/keycloak/keycloak:legacy
+    command:
+      - start-dev
     environment:
       PROXY_ADDRESS_FORWARDING: "true"
       DB_VENDOR: POSTGRES
@@ -72,3 +74,4 @@ services:
 
 volumes:
   mongo:
+ 
