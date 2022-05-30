@@ -13,35 +13,15 @@
     <option name="openedFilesInfos">
       <list>
         <OpenedFileInfo>
-          <option name="caretOffset" value="322" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/inventory-service/src/main/resources/application.yaml" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
           <option name="caretOffset" value="401" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/api-gateway/src/main/resources/application.properties" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="1187" />
+          <option name="caretOffset" value="1172" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/.gitpod.yml" />
         </OpenedFileInfo>
         <OpenedFileInfo>
-          <option name="caretOffset" value="76" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/order-service/src/main/resources/application.yaml" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="153" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/resources/application.yaml" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="806" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/java/com/minejava/discoveryserver/config/SecurityConfig.java" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="444" />
-          <option name="fileUrl" value="file://$PROJECT_DIR$/ms-kafka-parent/discovery-server/src/main/java/com/minejava/discoveryserver/DiscoveryServerApplication.java" />
-        </OpenedFileInfo>
-        <OpenedFileInfo>
-          <option name="caretOffset" value="0" />
+          <option name="caretOffset" value="624" />
           <option name="fileUrl" value="file://$PROJECT_DIR$/docker-compose.yaml" />
         </OpenedFileInfo>
       </list>
