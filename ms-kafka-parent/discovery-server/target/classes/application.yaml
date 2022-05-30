@@ -1,14 +1,16 @@
-server:
-  port: 8761
+#server:
+#  port: 8761
+#
+#eureka:
+#  instance:
+#    hostname: localhost
+#
 
-eureka:
-  instance:
-    hostname: localhost
+#  client:
+#    register-with-eureka: false
+#    fetch-registry: false
 
-  client:
-    register-with-eureka: false
-    fetch-registry: false
 
-  username: eureka # ${EUREKA_USERNAME:eureka}
+#  username: ${EUREKA_USERNAME:eureka}
 
-  password: password #${EUREKA_PASSWORD:password}
+#  password: ${EUREKA_PASSWORD:password}
