@@ -1,20 +1,17 @@
-#server:
-#  port: 8761
+server:
+  port: 8761
 #
 eureka:
   instance:
-    hostname: localhost
-    nonSecurePortEnabled: true
-    nonSecurePort: 8761
-    homePageUrl: http://${eureka.instance.hostname}/
-    statusPageUrl: http://${eureka.instance.hostname}/actuator/info/
-    healthCheckUrl: http://${eureka.instance.hostname}/actuator/health/
+    #hostname: localhost
+    preferIpAddress: true
 
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}/eureka/
+      defaultZone: http://localhost:8761/eureka/
+
 
 app:
   eureka:
