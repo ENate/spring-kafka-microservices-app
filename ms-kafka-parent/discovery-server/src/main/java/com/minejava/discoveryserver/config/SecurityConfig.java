@@ -14,10 +14,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
-    @Value("{eureka.username}")
+    @Value("{app.eureka.username}")
     private String username;
 
-    @Value("{eureka.password}")
+    @Value("{app.eureka.password}")
     private String password;
 
     @Override
