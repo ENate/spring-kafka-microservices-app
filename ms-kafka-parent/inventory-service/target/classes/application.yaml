@@ -10,7 +10,7 @@ spring:
         driverClassName: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://localhost:3306/inventory_service
         username: root
-        password: root_password
+        password: S3cret
     jpa:
         hibernate.ddl-auto: create-drop
         generate-ddl: true
