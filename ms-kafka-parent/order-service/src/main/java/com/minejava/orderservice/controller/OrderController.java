@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping("api/order")
+@RequestMapping("/api/order")
 @RequiredArgsConstructor
 public class OrderController {
     // create order service object to call order to controller
