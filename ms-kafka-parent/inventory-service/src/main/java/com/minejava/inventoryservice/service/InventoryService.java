@@ -9,16 +9,24 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import lombok.RequiredArgsConstructor;
+import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class InventoryService {
 
     // call interface
     private final InventoryRepository inventoryRepository;
 
     @Transactional(readOnly = true)
+    @SneakyThrows // Not for production!!
     public List<InventoryResponse> isInStock(List<String> skuCode) {
+        log.info("Wait Started....");
+        // Simulate slow behaviour
+        Thread.sleep(10000);
+        log.info("Wait Ended");
         return inventoryRepository.findBySkuCodeIn(skuCode).stream()
         .map(inventory -> 
             InventoryResponse.builder()

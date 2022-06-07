@@ -3,6 +3,12 @@ package com.minejava.orderservice.controller;
 import com.minejava.orderservice.dto.OrderRequest;
 import com.minejava.orderservice.service.OrderService;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+import io.github.resilience4j.retry.annotation.Retry;
+import io.github.resilience4j.timelimiter.annotation.TimeLimiter;
+
+import java.util.concurrent.CompletableFuture;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,10 +27,17 @@ public class OrderController {
     // Define post mapping and request body to send via rest
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public String placeOrder(@RequestBody OrderRequest orderRequest){
+    @CircuitBreaker(name = "inventory", fallbackMethod = "fallbackMethod")
+    @TimeLimiter(name = "inventory") // name property must be the same as in application yaml file
+    @Retry(name = "inventory") // provides num to retry )
+    public CompletableFuture<String> placeOrder(@RequestBody OrderRequest orderRequest){
         // whenever the user places order, it will save and the info
         // returned will be displayed
-        orderService.placeOrder(orderRequest);
-        return "Order placed successfully!";
+        // Compatible future for asyn calls
+        return CompletableFuture.supplyAsync(() -> orderService.placeOrder(orderRequest));
+    }
+
+    public CompletableFuture<String> fallbackMethod(OrderRequest orderRequest, RuntimeException runtimeException) {
+        return CompletableFuture.supplyAsync(() -> "Something went wrong, please try to order again!");
     }
 }

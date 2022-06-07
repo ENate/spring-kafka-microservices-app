@@ -19,3 +19,33 @@ eureka:
     client:
         serviceUrl:
             defaultZone: http://eureka:password@localhost:8761/eureka
+# configure actuator to expose all endpoints and activate cirucuit breakers
+management.health.circuitbreakers.enabled: true
+management.endpoints.web.exposure.include: '*'
+management.endpoint.health.show-details: always
+# Define resilience 4j properties
+
+resilience4j:
+    circuitbreaker:
+        instances:
+            inventory:
+                registerHealthIndicator: true # to see different states for circuit breaker
+                event-consumer-buffer-size: 10 # how much buffer size to take for events
+                slidingWindowType: COUNT_BASED # Use count base - wait for number of failed requests
+                slidingWindowSize: 5 # size to provide - after 5 requests before changing state
+                failureRateThreshold: 50 # percentage fails
+                waitDurationInOpenState: 5s # wait for 5 secods to change from open -> half-> open
+                permittedNumberOfCallsInHalfOpenState: 3 # Allow only 3 calls in half -> open before changing state
+                automaticTransitionFromOpenToHalfOpenEnabled: true # To automate transition from open to half-open
+#Resilience4J Timeout Properties
+    timelimiter:
+        instances:
+            inventory:
+                timeout-duration: 3s
+
+#Resilience4J Retry Properties
+    retry:
+        instances:
+            inventory:
+                max-attempts: 3
+                wait-duration: 5s
