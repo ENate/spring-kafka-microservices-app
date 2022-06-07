@@ -25,7 +25,7 @@ public class InventoryService {
     public List<InventoryResponse> isInStock(List<String> skuCode) {
         log.info("Wait Started....");
         // Simulate slow behaviour
-        Thread.sleep(10000);
+        // Thread.sleep(10000);
         log.info("Wait Ended");
         return inventoryRepository.findBySkuCodeIn(skuCode).stream()
         .map(inventory -> 

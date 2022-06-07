@@ -11,6 +11,9 @@ import com.minejava.orderservice.model.Order;
 import com.minejava.orderservice.model.OrderLineItems;
 import com.minejava.orderservice.repository.OrderRepository;
 
+import org.springframework.cloud.sleuth.Span;
+import org.springframework.cloud.sleuth.Tracer;
+import org.springframework.cloud.sleuth.Tracer.SpanInScope;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -24,6 +27,7 @@ public class OrderService {
 
     private final OrderRepository orderRepository;
     private final WebClient.Builder webClientBuilder;
+    private final Tracer tracer;
 
     public String placeOrder(OrderRequest orderRequest) {
         // Create order object
@@ -41,6 +45,10 @@ public class OrderService {
         List<String> skuCodes = order.getOrderLineItemsList().stream()
                                 .map(OrderLineItems::getSkuCode)
                                 .toList();
+        Span inventoryServiceLookup = tracer.nextSpan().name("inventoryServiceLookup");
+
+        try (SpanInScope spanInScope = tracer.withSpan(inventoryServiceLookup.start())) {
+
 
         InventoryResponse[] inventoryResponseArray = webClientBuilder.build().get()
                 .uri("http://inventory-service/api/inventory",
@@ -57,6 +65,10 @@ public class OrderService {
         else {
             throw new IllegalArgumentException("Product currently not in stock");
         }
+
+    } finally {
+        inventoryServiceLookup.end();
+    }
     }
     private OrderLineItems mapToDto(OrderLineItemsDto orderLineItemsDto){
         OrderLineItems orderLineItems = new OrderLineItems();
