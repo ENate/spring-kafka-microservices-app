@@ -5,6 +5,13 @@ spring:
   application:
     name: product-service
 
+  zipkin:
+    base-url: http://localhost:9411
+    
+  sleuth:
+        sampler:
+            probability: 1.0
+
   data:
       mongodb:
         host:mongodb
