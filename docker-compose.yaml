@@ -55,6 +55,10 @@ services:
       - 8181:8080
     depends_on:
       - postgres
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+     - "9411:9411"
 volumes:
   mongo:
  
