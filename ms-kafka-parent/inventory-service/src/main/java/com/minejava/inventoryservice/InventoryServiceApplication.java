@@ -28,12 +28,23 @@ public class InventoryServiceApplication {
 			// Another object
 			Inventory inventory2 = new Inventory();
 			inventory2.setSkuCode("skuCode_XXX");
-			inventory2.setQuantity(0);
+			inventory2.setQuantity(10);
 
+			// Another object
+			Inventory inventory3 = new Inventory();
+			inventory3.setSkuCode("sCode_XXX");
+			inventory3.setQuantity(10);
+
+			// Another object
+			Inventory inventory4 = new Inventory();
+			inventory4.setSkuCode("XCe_XXX");
+			inventory4.setQuantity(30);
 
 			// Save them in a db!
 			inventoryRepository.save(inventory1);
 			inventoryRepository.save(inventory2);
+			inventoryRepository.save(inventory3);
+			inventoryRepository.save(inventory4);
 		};
 		
 	}
