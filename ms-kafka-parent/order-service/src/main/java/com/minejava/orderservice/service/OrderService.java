@@ -7,6 +7,7 @@ import java.util.UUID;
 import com.minejava.orderservice.dto.InventoryResponse;
 import com.minejava.orderservice.dto.OrderLineItemsDto;
 import com.minejava.orderservice.dto.OrderRequest;
+import com.minejava.orderservice.event.OrderPlacedEvent;
 import com.minejava.orderservice.model.Order;
 import com.minejava.orderservice.model.OrderLineItems;
 import com.minejava.orderservice.repository.OrderRepository;
@@ -14,6 +15,7 @@ import com.minejava.orderservice.repository.OrderRepository;
 import org.springframework.cloud.sleuth.Span;
 import org.springframework.cloud.sleuth.Tracer;
 import org.springframework.cloud.sleuth.Tracer.SpanInScope;
+import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.reactive.function.client.WebClient;
@@ -28,6 +30,8 @@ public class OrderService {
     private final OrderRepository orderRepository;
     private final WebClient.Builder webClientBuilder;
     private final Tracer tracer;
+    // Add kafka
+    private final KafkaTemplate<String, OrderPlacedEvent> kafkaTemplate;
 
     public String placeOrder(OrderRequest orderRequest) {
         // Create order object
@@ -60,6 +64,7 @@ public class OrderService {
         boolean allProductsInStock = Arrays.stream(inventoryResponseArray).allMatch(InventoryResponse::isInStock);
         if (allProductsInStock) {
             orderRepository.save(order);
+            kafkaTemplate.send("notificationTopic", new OrderPlacedEvent(order.getOrderNumber()));
             return "Order placed successfully!";
         }
         else {
