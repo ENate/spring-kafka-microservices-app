@@ -7,7 +7,7 @@ spring:
 
     zipkin:
         base-url: http://localhost:9411
-    
+
     sleuth:
         sampler:
             probability: 1.0
@@ -21,6 +21,19 @@ spring:
         hibernate.ddl-auto: update
         generate-ddl: true
         show-sql: true
+
+    kafka:
+        bootstrap-servers: localhost:9092
+        template:
+            default-topic: notificationTopic
+        producer:
+            key-serializer: org.apache.kafka.common.serialization.StringSerializer
+            value-serializer: org.springframework.kafka.support.serializer.
+            properties:
+              spring:
+                  json:
+                      type:
+                          mapping: event:com.minejava.orderservice.event.OrderPlacedEvent
 
 eureka:
     client:
@@ -56,3 +69,5 @@ resilience4j:
             inventory:
                 max-attempts: 3
                 wait-duration: 5s
+# kafka properties
+
