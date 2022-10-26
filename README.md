@@ -1,6 +1,6 @@
 # spring-kafka-microservices-app
 
-This repository contains a spring boot microservices application containing the most recent Spring framework APIs. It is mostly written in Java, spring boot, kafka, mongodb, mysql, rabbitMQ and Kafka message brokers, ELK, etc.
+This repository contains a spring boot microservices application implemented using the most recent Spring framework APIs. It is mostly written in Java, spring boot, kafka, mongodb, mysql, rabbitMQ and Kafka message brokers, ELK, etc.
 
 # Tech Stack
 
