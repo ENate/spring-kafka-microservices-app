@@ -1,4 +1,4 @@
-# A spring-boot kafka microservices application
+# A spring-boot ecommerce kafka microservices app
 
 This repository contains a spring boot microservices application implemented using the most recent Spring framework APIs. It is mostly written in Java, spring boot, kafka, mongodb, mysql, rabbitMQ and Kafka message brokers, ELK, etc.
 
