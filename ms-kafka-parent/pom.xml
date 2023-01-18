@@ -27,7 +27,7 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <spring-cloud.version>2021.0.2</spring-cloud.version>
+        <spring-cloud.version>2021.0.5</spring-cloud.version>
         <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
     </properties>
 
@@ -55,9 +55,8 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.plugin.version}</version>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <excludes>
                         <exclude>
@@ -70,12 +69,12 @@
             <plugin>
                 <groupId>com.google.cloud.tools</groupId>
                 <artifactId>jib-maven-plugin</artifactId>
-                <version>3.2.1</version>
+                <version>3.3.1</version>
                 <configuration>
                     <from>
                         <image>eclipse-temurin:17.0.4.1_1-jre</image>
                     </from>
-                    <to><image>registry.hub.docker.com/namaxik/${artifactId}</image></to>
+                    <to><image>registry.hub.docker.com/namaxik/${project.artifactId}</image></to>
                 </configuration>
             </plugin>
         </plugins>
