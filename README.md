@@ -24,7 +24,7 @@ This repository contains a spring boot microservices application implemented usi
 
 ## Others include
 
-- Monitoring via Grafan and Prometheus
+- Monitoring via Grafana and Prometheus
 - Package and deploy using Docker and Kubernetes
 
 ## Steps to Run the Application
@@ -43,8 +43,8 @@ Next, run the following command to spin up keycloak and databases via docker-com
 
 Use any API platform (eg Postman, thunder client, Http etc) to perform CRUD operations on the endpoints. The naming of the individual services describe their main functions. For instance, The `product-service` represent the products in a given ecommerce application. Proceed with performing CRUD operations.
 
-## Outstanding technologies
+##  To add the following 
 
-- Grafan and Prometheus for monitoring, etc
+- Grafana (visualization) and Prometheus (metrics), Tempo(traces), Loki (Logs) for monitoring and instrumentation
 - Deployment using docker and kubernetes
 - Add more services
