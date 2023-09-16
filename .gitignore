@@ -6,7 +6,9 @@
 
 # BlueJ files
 *.ctxt
-
+.fleet
+.idea
+.vscode
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
