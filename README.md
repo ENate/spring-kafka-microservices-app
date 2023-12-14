@@ -58,7 +58,7 @@ Use any API platform (eg Postman, thunder client, Http etc) to perform CRUD oper
 - Updated services to use latest boot, security and cloud APIs
 
 ### Please Note
-If you intend to save the docker images after build, please enter your username and set your password in the ```.m2/settings.xml`````` as described in the Google jib maven documentation.
+If you intend to save the docker images after build, please enter your username and set your password in the ```.m2/settings.xml``` as described in the Google jib maven documentation.
 
 You may do so by uncommenting this code snippet in the main `pom.xml` file and enter your username (for the docker registry):
 
