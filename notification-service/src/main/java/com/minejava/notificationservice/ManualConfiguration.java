@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ManualConfiguration {
 
-    private final ConcurrentKafkaListenerContainerFactory concurrentKafkaListenerContainerFactory;
+    private final ConcurrentKafkaListenerContainerFactory<?,?> concurrentKafkaListenerContainerFactory;
 
     @PostConstruct
     void setup() {

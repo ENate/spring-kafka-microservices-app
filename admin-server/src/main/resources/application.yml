@@ -1,0 +1,26 @@
+server:
+  port: 9800
+app:
+  eureka-server: localhost
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    health-check-url-path: /actuator/health
+    # metadata-map:
+    #  startup: ${random.int}    #needed to trigger info and endpoint update after restart
+  client:
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: ${EUREKA_SERVICE_URL:http://eureka:password@localhost:8761}/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # DO NOT DO THIS IN PRODUCTION. Select!
+  endpoint:
+    health:
+      show-details: ALWAYS
+spring:
+  application:
+    name: admin-server

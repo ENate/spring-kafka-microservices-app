@@ -14,7 +14,7 @@ import lombok.RequiredArgsConstructor;
 @Configuration(proxyBeanMethods = false)
 @RequiredArgsConstructor
 public class ManualConfiguration {
-    private final KafkaTemplate kafkaTemplate;
+    private final KafkaTemplate<?,?> kafkaTemplate;
 
     @PostConstruct
     void setup() {

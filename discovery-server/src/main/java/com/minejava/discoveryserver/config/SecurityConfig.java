@@ -27,7 +27,7 @@ public class SecurityConfig {
     @Value("${app.eureka.password}")
     private String password;
 
-    
+    @Bean
     protected SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(csrf -> csrf.disable())
             //.httpBasic()
@@ -36,16 +36,17 @@ public class SecurityConfig {
                 //.authorizeRequest(authz -> authz.anyRequest()
                 //.authenticated())
                 //.and()
+                .formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults());
         return http.build();
     }
 
 
     @Bean
-    public InMemoryUserDetailsManager userDetailsService() {
-        UserDetails user = User.withDefaultPasswordEncoder()
+    public InMemoryUserDetailsManager userDetailsService(PasswordEncoder encoder) {
+        UserDetails user = User.builder()//.withDefaultPasswordEncoder()
                 .username(username)
-                .password(password)
+                .password(encoder.encode(password))
                 .roles("USER")
                 .build();
         return new InMemoryUserDetailsManager(user);

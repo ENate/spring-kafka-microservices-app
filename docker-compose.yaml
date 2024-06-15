@@ -1,89 +1,86 @@
-version: '3.8'
-
 services:
-  zookeeper:
-    image: confluentinc/cp-zookeeper:7.0.1
-    container_name: zookeeper
-    environment:
-      ZOOKEEPER_CLIENT_PORT: 2181
-      ZOOKEEPER_TICK_TIME: 2000
+    zookeeper:
+        image: confluentinc/cp-zookeeper:7.0.1
+        container_name: zookeeper
+        environment:
+            ZOOKEEPER_CLIENT_PORT: 2181
+            ZOOKEEPER_TICK_TIME: 2000
 
-  broker:
-    image: confluentinc/cp-kafka:7.0.1
-    container_name: broker
-    ports:
-      # To learn about configuring Kafka for access across networks see
-      # https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc/
-      - "9092:9092"
-    depends_on:
-      - zookeeper
-    environment:
-      KAFKA_BROKER_ID: 1
-      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
-      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://broker:29092
-      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
-      KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
-      KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
-  mongodb:
-    image: mongo:latest
-    container_name: mongodb
-    ports:
-      - 27017:27017
-    volumes:
-      - ~/apps/mongo:/data/db
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME:root
-      - MONGO_INITDB_ROOT_PASSWORD:S3cret
-      - MONGO_INITDB_DATABASE:testdb
-  mysql:
-    image: mysql:latest
-    container_name: mysql
-    ports:
-      - 3306:3306
-    volumes:
-      - ~/apps/mysql:/var/lib/mysql
-    environment:
-      - MYSQL_ROOT_PASSWORD=S3cret
-      - MYSQL_PASSWORD=An0thrS3crt
-      - MYSQL_USER=mysql_user
-      - MYSQL_DATABASE=order_db
-  
-  postgres:
-    image: postgres
-    container_name: postgres
-    volumes:
-      - /workspace/postgres_data:/var/lib/postgresql/data
-    environment:
-      POSTGRES_DB: keycloak
-      POSTGRES_USER: keycloak
-      POSTGRES_PASSWORD: password
-  keycloak:
-    image: quay.io/keycloak/keycloak:legacy
-    container_name: keycloak
-    environment:
-      DB_VENDOR: POSTGRES
-      PROXY_ADDRESS_FORWARDING: "true"
-      DB_ADDR: postgres
-      DB_DATABASE: keycloak
-      DB_USER: keycloak
-      DB_SCHEMA: public
-      DB_PASSWORD: password
-      KEYCLOAK_ADMIN_USER: admin
-      KEYCLOAK_ADMIN_PASSWORD: password
-      KEYCLOAK_USER: admin
-      KEYCLOAK_PASSWORD: password
-      # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
-      #JDBC_PARAMS: "ssl=true"
-    ports:
-      - 8181:8080
-    depends_on:
-      - postgres
-  zipkin:
-    image: openzipkin/zipkin
-    container_name: zipkin
-    ports:
-     - "9411:9411"
+    broker:
+        image: confluentinc/cp-kafka:7.0.1
+        container_name: broker
+        ports:
+            # To learn about configuring Kafka for access across networks see
+            # https://www.confluent.io/blog/kafka-client-cannot-connect-to-broker-on-aws-on-docker-etc/
+            - "9092:9092"
+        depends_on:
+            - zookeeper
+        environment:
+            KAFKA_BROKER_ID: 1
+            KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
+            KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
+            KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://broker:29092
+            KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+            KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
+            KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
+    mongodb:
+        image: mongo:latest
+        container_name: mongodb
+        ports:
+            - "27017:27017"
+        volumes:
+            - ~/apps/mongo:/data/db
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME:root
+            - MONGO_INITDB_ROOT_PASSWORD:S3cret
+            - MONGO_INITDB_DATABASE:testdb
+    mysql:
+        image: mysql:latest
+        container_name: mysql
+        ports:
+            - "3306:3306"
+        volumes:
+            - ~/apps/mysql:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=S3cret
+            - MYSQL_PASSWORD=An0thrS3crt
+            - MYSQL_USER=mysql_user
+            - MYSQL_DATABASE=order_db
+
+    postgres:
+        image: postgres
+        container_name: postgres
+        volumes:
+            - /workspace/postgres_data:/var/lib/postgresql/data
+        environment:
+            POSTGRES_DB: keycloak
+            POSTGRES_USER: keycloak
+            POSTGRES_PASSWORD: password
+    keycloak:
+        image: quay.io/keycloak/keycloak:legacy
+        container_name: keycloak
+        environment:
+            DB_VENDOR: POSTGRES
+            PROXY_ADDRESS_FORWARDING: "true"
+            DB_ADDR: postgres
+            DB_DATABASE: keycloak
+            DB_USER: keycloak
+            DB_SCHEMA: public
+            DB_PASSWORD: password
+            KEYCLOAK_ADMIN_USER: admin
+            KEYCLOAK_ADMIN_PASSWORD: password
+            KEYCLOAK_USER: admin
+            KEYCLOAK_PASSWORD: password
+            # Uncomment the line below if you want to specify JDBC parameters. The parameter below is just an example, and it shouldn't be used in production without knowledge. It is highly recommended that you read the PostgreSQL JDBC driver documentation in order to use it.
+            #JDBC_PARAMS: "ssl=true"
+        ports:
+            - "8181:8080"
+        depends_on:
+            - postgres
+    zipkin:
+        image: openzipkin/zipkin
+        container_name: zipkin
+        ports:
+            - "9411:9411"
 volumes:
-  mongo:
- 
+    mongo:

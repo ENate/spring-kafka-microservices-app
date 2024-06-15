@@ -1,5 +1,3 @@
----
-version: '3'
 services:
   ## MySQL Docker Compose Config
   postgres-order:
@@ -60,7 +58,7 @@ services:
   keycloak:
     container_name: keycloak
     image: quay.io/keycloak/keycloak:18.0.0
-    command: [ "start-dev", "--import-realm" ]
+    command: ["start-dev", "--import-realm"]
     environment:
       DB_VENDOR: MYSQL
       DB_ADDR: mysql
@@ -92,7 +90,7 @@ services:
       - zookeeper
     environment:
       KAFKA_BROKER_ID: 1
-      KAFKA_ZOOKEEPER_CONNECT: 'zookeeper:2181'
+      KAFKA_ZOOKEEPER_CONNECT: "zookeeper:2181"
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://broker:29092
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
