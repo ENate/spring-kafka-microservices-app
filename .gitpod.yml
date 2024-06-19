@@ -21,30 +21,30 @@ ports:
     onOpen: open-preview
 
 
-vscode:
-  extensions:
-    -  alexesprit.vscode-slack-dark-theme 
-    -  felipe-mendes.slack-theme 
-    -	 vscjava.vscode-java-pack  
-    -	 Pivotal.vscode-boot-dev-pack  
-    -	 vscjava.vscode-lombok  
-    -	 eamodio.gitlens  
-    -	 felipecaputo.git-project-manager  
-    -	 dbaeumer.vscode-eslint  
-    -	 ms-vscode.cpptools-extension-pack  
-    -	 evondev.indent-rainbow-palettes  
-    -	 donjayamanne.git-extension-pack  
-    -	 esbenp.prettier-vscode  
-    -	 redhat.vscode-xml  
-    -	 rangav.vscode-thunder-client  
-    -	 developersoapbox.vscode-springboot-developer-pack  
-    -	 ms-azuretools.vscode-dapr  
-    -	 bierner.markdown-preview-github-styles  
-    -	 oderwat.indent-rainbow  
-    -	 cweijan.git-graph-history  
-    -	 mhutchie.git-graph  
-    -	 ms-vscode.makefile-tools  
-    -	 mongodb.mongodb-vscode  
-    -	 redhat.vscode-yaml 
-    - ms-azuretools.vscode-docker
+# vscode:
+#   extensions:
+#     -  alexesprit.vscode-slack-dark-theme 
+#     -  felipe-mendes.slack-theme 
+#     -	 vscjava.vscode-java-pack  
+#     -	 Pivotal.vscode-boot-dev-pack  
+#     -	 vscjava.vscode-lombok  
+#     -	 eamodio.gitlens  
+#     -	 felipecaputo.git-project-manager  
+#     -	 dbaeumer.vscode-eslint  
+#     -	 ms-vscode.cpptools-extension-pack  
+#     -	 evondev.indent-rainbow-palettes  
+#     -	 donjayamanne.git-extension-pack  
+#     -	 esbenp.prettier-vscode  
+#     -	 redhat.vscode-xml  
+#     -	 rangav.vscode-thunder-client  
+#     -	 developersoapbox.vscode-springboot-developer-pack  
+#     -	 ms-azuretools.vscode-dapr  
+#     -	 bierner.markdown-preview-github-styles  
+#     -	 oderwat.indent-rainbow  
+#     -	 cweijan.git-graph-history  
+#     -	 mhutchie.git-graph  
+#     -	 ms-vscode.makefile-tools  
+#     -	 mongodb.mongodb-vscode  
+#     -	 redhat.vscode-yaml 
+#     - ms-azuretools.vscode-docker
   
