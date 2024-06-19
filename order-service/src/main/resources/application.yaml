@@ -30,10 +30,10 @@ spring:
             key-serializer: org.apache.kafka.common.serialization.StringSerializer
             value-serializer: org.springframework.kafka.support.serializer.
             properties:
-              spring:
-                  json:
-                      type:
-                          mapping: event:com.minejava.orderservice.event.OrderPlacedEvent
+                spring:
+                    json:
+                        type:
+                            mapping: event:com.minejava.orderservice.event.OrderPlacedEvent
 
 eureka:
     client:
