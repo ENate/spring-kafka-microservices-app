@@ -14,7 +14,7 @@ spring:
             #probability: 1.0
 
     datasource:
-        driverClassName: com.mysql.cj.jdbc.Driver
+        driver-class-name: com.mysql.cj.jdbc.Driver
         url: jdbc:mysql://localhost:3306/inventory_service
         username: root
         password: S3cret
@@ -22,6 +22,7 @@ spring:
         hibernate.ddl-auto: create-drop
         generate-ddl: true
         show-sql: true
+        database-platform: org.hibernate.dialect.MySQLDialect
 eureka:
     client:
         serviceUrl:

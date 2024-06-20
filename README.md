@@ -19,13 +19,13 @@ This repository contains a spring boot microservices application implemented usi
 
 ### Other Tech Stack
 
-- Authorization via Spring OAuth2 resource server (via keycloak)
+- Authorization via Spring OAuth2 resource server (using keycloak)
 - Keycloack provides the authorization via OAuth2 & OIDC
 
 ### Others include
 
 - Monitoring via Grafana and Prometheus
-- Package and deploy using Docker and Kubernetes
+- Package and deploy using Docker and Kubernetes (later)
 
 ### Steps to Run the Application
 
