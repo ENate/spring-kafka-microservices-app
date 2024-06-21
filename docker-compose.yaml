@@ -29,7 +29,7 @@ services:
         ports:
             - "27017:27017"
         volumes:
-            - ~/apps/mongo:/data/db
+            - ./apps/mongo:/data/db
         environment:
             - MONGO_INITDB_ROOT_USERNAME:root
             - MONGO_INITDB_ROOT_PASSWORD:S3cret
@@ -40,18 +40,32 @@ services:
         ports:
             - "3306:3306"
         volumes:
-            - ~/apps/mysql:/var/lib/mysql
+            - ./apps/mysql:/var/lib/mysql
         environment:
             - MYSQL_ROOT_PASSWORD=S3cret
             - MYSQL_PASSWORD=An0thrS3crt
             - MYSQL_USER=mysql_user
             - MYSQL_DATABASE=order_db
 
+    # For inventory service
+    mysql-in:
+        image: mysql:latest
+        container_name: mysql-in
+        ports:
+            - "3305:3306"
+        volumes:
+            - /apps/mysql-in:/var/lib/mysql
+        environment:
+            - MYSQL_ROOT_PASSWORD=S3cret
+            - MYSQL_PASSWORD=An0thrS3crt
+            - MYSQL_USER=mysql_user
+            - MYSQL_DATABASE=inventory_service
+
     postgres:
         image: postgres
         container_name: postgres
         volumes:
-            - /workspace/postgres_data:/var/lib/postgresql/data
+            - ./apps/postgres:/var/lib/postgresql/data
         environment:
             POSTGRES_DB: keycloak
             POSTGRES_USER: keycloak
