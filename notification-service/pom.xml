@@ -9,7 +9,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>notification-service</name>
     <artifactId>notification-service</artifactId>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>22</java.version>

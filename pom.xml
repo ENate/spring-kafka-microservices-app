@@ -25,6 +25,8 @@
     </modules>
 
     <properties>
+        <java.version>22</java.version>
+        <org.mapstruct.version>1.18.32</org.mapstruct.version>
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
         <spring-cloud.version>2023.0.2</spring-cloud.version>
@@ -63,14 +65,12 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
-                            <version>1.18.32</version>
-                            <!--version>${org.lombok.version}</version-->
+                            <version>${org.lombok.version}</version>
                         </path>
                         <path>
                             <groupId>org.mapstruct</groupId>
                             <artifactId>mapstruct-processor</artifactId>
-                            <version>1.18.32</version>
-                            <!--version>${org.mapstruct.version}</version-->
+                            <version>${org.mapstruct.version}</version>
                         </path>
                         <!-- new map binding -->
                         <path>

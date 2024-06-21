@@ -10,6 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>discovery-server</artifactId>
+    <name>discovery-server</name>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>22</java.version>

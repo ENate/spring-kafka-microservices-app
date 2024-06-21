@@ -10,6 +10,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>order-service</artifactId>
+    <name>order-service</name>
+    <packaging>jar</packaging>
 
     <properties>
         <java.version>22</java.version>
